@@ -1,1 +1,0 @@
-"use strict";const e=require("vue"),o=require("element-plus"),l=e.defineComponent({name:"ZButton",props:{size:{type:String,default:"default"}},setup(t,{slots:u}){const n="custom-btn",s=e.computed(()=>({[n]:!0,[`${n}-${t.size}`]:t.size!=="default"}));return()=>e.createVNode(o.ElButton,{class:s.value},{default:()=>[u.default&&u.default()]})}});module.exports=l;

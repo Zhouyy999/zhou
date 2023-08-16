@@ -1,1 +1,0 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const n=require("./components.js"),s=require("./button/button.js"),u={install:e=>{for(const o in n){const t=n[o];"install"in t&&e.use(t)}return e}};exports.ZButton=s;exports.default=u;
