@@ -1,0 +1,9 @@
+packages:
+  # 所有在package/ 和 components/ 子目录下的package
+  - 'packages/*'
+  - 'components/**'
+  # 不包括test文件夹下的package
+  - '!**/test/**'
+  - site
+  - vue-ui-demo
+  - vue-ui-demo1

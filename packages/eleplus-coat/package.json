@@ -1,0 +1,40 @@
+{
+  "name": "@zhou/eleplus-coat",
+  "private": true,
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.js",
+  "scripts": {
+    "build:comp": "vite build",
+    "bundleLess": "esno scripts/bundleLess.ts",
+    "bundleStyle": "vite build --config vite.config.style.ts",
+    "bundle": "vite build --config vite.config.bundle.ts",
+    "bundleLessMin": "vite build --config vite.config.bundle.style.ts",
+    "bundleMin": "pnpm bundleLessMin && pnpm bundle",
+    "bulid": "pnpm build:comp && pnpm bundleLess && pnpm bundleStyle && pnpm bundleMin"
+  },
+  "files": [
+    "lib",
+    "es",
+    "dist"
+  ],
+  "dependencies": {
+    "element-plus": "^2.3.8",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/less": "^3.0.3",
+    "@types/node": "^20.4.5",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "cpy": "^10.1.0",
+    "esno": "^0.17.0",
+    "fast-glob": "^3.3.1",
+    "less": "^4.2.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.4.0",
+    "vue-tsc": "^1.8.5"
+  }
+}
