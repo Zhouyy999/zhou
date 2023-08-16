@@ -1,10 +1,12 @@
 import { createApp } from 'vue'
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
-// import '@zhou/eleplus-coat/dist/style.css'
-import './style.css'
 import App from './App.vue'
+// import '@zhou/eleplus-coat/dist/style.css'
+import 'element-plus/dist/index.css'
+import zhou from '@zhou/eleplus-coat'
+import elementPlus from 'element-plus'
 
 const app = createApp(App)
-app.use(ElementPlus)
+
+app.use(zhou)
+// app.use(elementPlus)
 app.mount('#app')

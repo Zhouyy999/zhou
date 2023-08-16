@@ -6,4 +6,3 @@ packages:
   - '!**/test/**'
   - site
   - vue-ui-demo
-  - vue-ui-demo1

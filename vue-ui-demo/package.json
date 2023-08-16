@@ -1,10 +1,12 @@
 {
-  "name": "vue-ui-demo",
+  "name": "vue-ui-demo1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@zhou/eleplus-coat": "workspace:^",

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import { ZButton } from '@zhou/eleplus-coat'
+import '@zhou/eleplus-coat/es/button/style/index.css'
 </script>
 
 <template>
@@ -13,7 +14,8 @@ import { ZButton } from '@zhou/eleplus-coat'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <ZButton type="danger" size="large">444444</ZButton>
+  <z-button size="large">123</z-button>
+  <ZButton size="large">333</ZButton>
 </template>
 
 <style scoped>
