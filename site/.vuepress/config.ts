@@ -26,10 +26,11 @@ export default defineUserConfig({
       // 所以引入unplugin-element-plus插件，这边在渲染时实时转换样式
       plugins: [jsx(), ElementPlus({})],
       resolve: {
-        alias: { 
+        alias: {
+          iconfont: resolve(__dirname, './public/iconfont'),
           'eleplus-coat/style': resolve(__dirname, '../../packages/eleplus-coat/src/style.ts'),
           'eleplus-coat': resolve(__dirname, '../../packages/eleplus-coat/src/index.ts')
-         }
+        }
       }
     }
   })

@@ -1,6 +1,4 @@
 <template>
-  <z-button type="danger">1222</z-button>
-  <z-button type="danger" size="large">大的</z-button>
+  <z-button>基础按钮</z-button>
+  <z-button type="primary" size="large">大的基础按钮</z-button>
 </template>
-
-<script setup lang="ts"></script>

@@ -1,9 +1,4 @@
-import Button from './button'
-import type { App, Plugin } from 'vue'
+import ZButton from './button.tsx'
+import { withInstall } from '@zhou/utils'
 
-Button.install = (app: App) => {
-  app.component(Button.name || '', Button)
-  return app
-}
-
-export default Button as typeof Button & Plugin
+export default withInstall(ZButton)

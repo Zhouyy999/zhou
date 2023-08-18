@@ -2,9 +2,11 @@
   "name": "@zhou/utils",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,7 @@
   "devDependencies": {
     "@vue/tsconfig": "^0.4.0",
     "typescript": "^5.1.6",
+    "unbuild": "^1.2.1",
     "vite": "^4.4.7",
     "vitest": "^0.33.0"
   },

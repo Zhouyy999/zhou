@@ -14,7 +14,7 @@ export default defineConfig({
     rollupOptions: {
       input: ['src/index.ts'],
       // 最终生产环境打包时，不会包给打包进去
-      external: ['vue', 'element-plus'],
+      external: ['vue', 'element-plus', '@element-plus/icons-vue'],
       // 打包输出配置
       output: [
         // esm

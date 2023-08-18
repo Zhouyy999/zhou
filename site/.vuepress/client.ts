@@ -3,6 +3,7 @@ import { defineClientConfig } from '@vuepress/client'
 import eleplusCoating from 'eleplus-coat'
 import 'eleplus-coat/style'
 import './custom.less'
+import 'iconfont/iconfont.css'
 
 export default defineClientConfig({
   enhance({ app }) {
